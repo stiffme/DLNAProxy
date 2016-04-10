@@ -11,9 +11,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.esipeng.dlna" level="INFO"/>
-
-    <root level="ERROR">
+    <root level="DEBUG">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

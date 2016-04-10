@@ -10,6 +10,9 @@ object ApplicationConfig {
 
   val multicastAddress = config.getString("dlna.multiAddress")
   val multicastPort = config.getInt("dlna.multiPort")
-
-
+  val localAddress = config.getString("dlna.localAddress")
+  val dlnaServer = config.getString("dlna.server")
+  val defaultCacheControl = config.getInt("dlna.defaultCacheControl")
 }
+
+

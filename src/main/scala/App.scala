@@ -1,5 +1,6 @@
-import akka.actor.ActorSystem
-import org.slf4j.bridge.SLF4JBridgeHandler
+import akka.actor.{ActorSystem, Props}
+import upnp.UpnpServer
+
 
 
 /**
@@ -10,7 +11,7 @@ object App {
 
   def main(args : Array[String]) {
     implicit val actorSystem = ActorSystem("ActorSystem")
-
+    val upnpServer = actorSystem.actorOf(Props[UpnpServer],"UpnpServer")
 
   }
 
